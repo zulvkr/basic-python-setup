@@ -1,5 +1,5 @@
-from stoked import __version__
-from stoked.math import multiply_two_numbers
+from kulpy import __version__
+from kulpy.math import multiply_two_numbers
 
 
 def test_version():

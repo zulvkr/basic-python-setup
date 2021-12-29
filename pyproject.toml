@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "stoked"
+name = "kulpy"
 version = "0.1.0"
 description = ""
 authors = ["Ivan Zulfikar <ivan.zulf.ikar@gmail.com>"]
@@ -7,6 +7,8 @@ authors = ["Ivan Zulfikar <ivan.zulf.ikar@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.10"
 aiohttp = "^3.8.1"
+fastapi = "^0.70.1"
+uvicorn = {extras = ["standard"], version = "^0.16.0"}
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
