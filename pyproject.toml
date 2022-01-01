@@ -4,19 +4,21 @@ version = "0.1.0"
 description = ""
 authors = ["Ivan Zulfikar <ivan.zulf.ikar@gmail.com>"]
 
+[tool.poetry.scripts]
+dev = 'fast.scripts:dev'
+
 [tool.poetry.dependencies]
 python = "^3.10"
+fastapi = {extras = ["all"], version = "^0.70.1"}
 aiohttp = "^3.8.1"
-fastapi = "^0.70.1"
-uvicorn = {extras = ["standard"], version = "^0.16.0"}
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
 pytest-cov = "^3.0.0"
 pre-commit = "^2.16.0"
 flake8 = "^4.0.1"
-black = {version = "^21.12b0", allow-prereleases = true}
 mypy = "^0.910"
+black = {version = "^21.12b0", allow-prereleases = true}
 
 [tool.black]
 line-length = 79
